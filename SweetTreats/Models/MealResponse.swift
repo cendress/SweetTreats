@@ -19,6 +19,11 @@ struct MealResponse: Codable {
         var strMealThumb: String
         var strInstructions: String?
         
+        // ID property required to conform to Identifiable protocol
+        var id: String {
+            return idMeal
+        }
+        
         /// Optional ingredients
         var strIngredient1: String?
         var strIngredient2: String?
@@ -62,11 +67,6 @@ struct MealResponse: Codable {
         var strMeasure18: String?
         var strMeasure19: String?
         var strMeasure20: String?
-        
-        // ID property required to conform to Identifiable protocol
-        var id: String {
-            return idMeal
-        }
         
         // Helper functions to get a list of ingredients and measurements
         func ingredients() -> [String] {
