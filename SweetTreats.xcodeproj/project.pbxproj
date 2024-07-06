@@ -12,6 +12,7 @@
 		9DDADAB12C39BDA200338413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDADAB02C39BDA200338413 /* Assets.xcassets */; };
 		9DDADAB42C39BDA200338413 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDADAB32C39BDA200338413 /* Preview Assets.xcassets */; };
 		9DDADABB2C39BE2900338413 /* MealResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDADABA2C39BE2900338413 /* MealResponse.swift */; };
+		9DDADAC02C39C1A800338413 /* MealDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDADABF2C39C1A800338413 /* MealDetailResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9DDADAB02C39BDA200338413 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DDADAB32C39BDA200338413 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9DDADABA2C39BE2900338413 /* MealResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealResponse.swift; sourceTree = "<group>"; };
+		9DDADABF2C39C1A800338413 /* MealDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9DDADABA2C39BE2900338413 /* MealResponse.swift */,
+				9DDADABF2C39C1A800338413 /* MealDetailResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DDADAC02C39C1A800338413 /* MealDetailResponse.swift in Sources */,
 				9DDADAAF2C39BD9F00338413 /* ContentView.swift in Sources */,
 				9DDADABB2C39BE2900338413 /* MealResponse.swift in Sources */,
 				9DDADAAD2C39BD9F00338413 /* SweetTreatsApp.swift in Sources */,
