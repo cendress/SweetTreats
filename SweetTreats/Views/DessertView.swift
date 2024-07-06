@@ -9,13 +9,14 @@ import SwiftUI
 
 struct DessertView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                Text("Dessert 1")
+                
+                Text("Dessert 2")
+            }
+            .navigationTitle("SweetTreats")
         }
-        .padding()
     }
 }
 
