@@ -56,7 +56,7 @@
 				9DDADAAC2C39BD9F00338413 /* SweetTreatsApp.swift */,
 				9DDADABC2C39BEAC00338413 /* Models */,
 				9DDADABD2C39BED300338413 /* Views */,
-				9DDADAB02C39BDA200338413 /* Assets.xcassets */,
+				9DDADABE2C39BF0500338413 /* Resources */,
 				9DDADAB22C39BDA200338413 /* Preview Content */,
 			);
 			path = SweetTreats;
@@ -84,6 +84,14 @@
 				9DDADAAE2C39BD9F00338413 /* ContentView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9DDADABE2C39BF0500338413 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9DDADAB02C39BDA200338413 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
