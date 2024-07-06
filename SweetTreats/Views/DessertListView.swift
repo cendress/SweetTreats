@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DessertView: View {
+struct DessertListView: View {
     var body: some View {
         NavigationStack {
             List {
@@ -21,5 +21,5 @@ struct DessertView: View {
 }
 
 #Preview {
-    DessertView()
+    DessertListView()
 }
