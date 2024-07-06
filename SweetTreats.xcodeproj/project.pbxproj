@@ -58,6 +58,7 @@
 				9DDADAAC2C39BD9F00338413 /* SweetTreatsApp.swift */,
 				9DDADABC2C39BEAC00338413 /* Models */,
 				9DDADABD2C39BED300338413 /* Views */,
+				9DDADAC32C39CD7000338413 /* Helpers */,
 				9DDADABE2C39BF0500338413 /* Resources */,
 				9DDADAB22C39BDA200338413 /* Preview Content */,
 			);
@@ -95,6 +96,13 @@
 				9DDADAB02C39BDA200338413 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		9DDADAC32C39CD7000338413 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
