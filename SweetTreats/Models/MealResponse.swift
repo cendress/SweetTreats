@@ -10,6 +10,7 @@ import Foundation
 struct MealResponse: Codable {
     var meals: [Meal]
     
+    // Nested struct for organization
     struct Meal: Identifiable, Codable {
         var idMeal: String
         var strMeal: String
