@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct MealDetailView: View {
+    var mealName: String
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading) {
+                    
+                    // Maybe place image thumbnail here?
+                    
+                    Text("Instructions will go here.")
+                        .padding()
+                    
+                    Text("Ingredients will go here.")
+                        .padding()
+                    
+                    Text("Measurements will go here.")
+                        .padding()
+                }
+            }
+            .navigationTitle(mealName)
+        }
     }
 }
 
 #Preview {
-    MealDetailView()
+    MealDetailView(mealName: "Sample Dessert Name")
 }
