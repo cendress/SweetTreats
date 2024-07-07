@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9DBA65272C39CF54004A316D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBA65262C39CF54004A316D /* NetworkService.swift */; };
+		9DBA65442C3AC497004A316D /* DessertListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBA65432C3AC497004A316D /* DessertListViewModel.swift */; };
 		9DDADAAD2C39BD9F00338413 /* SweetTreatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDADAAC2C39BD9F00338413 /* SweetTreatsApp.swift */; };
 		9DDADAAF2C39BD9F00338413 /* DessertListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDADAAE2C39BD9F00338413 /* DessertListView.swift */; };
 		9DDADAB12C39BDA200338413 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DDADAB02C39BDA200338413 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		9DBA65262C39CF54004A316D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9DBA65432C3AC497004A316D /* DessertListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListViewModel.swift; sourceTree = "<group>"; };
 		9DDADAA92C39BD9F00338413 /* SweetTreats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweetTreats.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DDADAAC2C39BD9F00338413 /* SweetTreatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetTreatsApp.swift; sourceTree = "<group>"; };
 		9DDADAAE2C39BD9F00338413 /* DessertListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertListView.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		9DBA65422C3AC392004A316D /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				9DBA65432C3AC497004A316D /* DessertListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DBA65272C39CF54004A316D /* NetworkService.swift in Sources */,
+				9DBA65442C3AC497004A316D /* DessertListViewModel.swift in Sources */,
 				9DDADAC22C39C9CF00338413 /* MealDetailView.swift in Sources */,
 				9DDADAAF2C39BD9F00338413 /* DessertListView.swift in Sources */,
 				9DDADABB2C39BE2900338413 /* MealResponse.swift in Sources */,
