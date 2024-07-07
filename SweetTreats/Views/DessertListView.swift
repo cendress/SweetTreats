@@ -15,28 +15,7 @@ struct DessertListView: View {
         NavigationStack {
             List(viewModel.desserts) { dessert in
                 NavigationLink(destination: MealDetailView(mealID: dessert.idMeal)) {
-                    HStack {
-                        // Use AsyncImage when loading an image from a server
-                        AsyncImage(url: URL(string: dessert.strMealThumb)) { phase in
-                            if let image = phase.image {
-                                image
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .clipped()
-                                    .cornerRadius(8)
-                            } else if phase.error != nil {
-                                Image(systemName: "photo")
-                                    .background(Color.gray)
-                                    .cornerRadius(8)
-                            } else {
-                                ProgressView()
-                            }
-                        }
-                        .frame(width: 75, height: 75)
-                        
-                        Text(dessert.strMeal)
-                            .font(.headline)
-                    }
+                    DessertRow(dessert: dessert)
                 }
             }
             .navigationTitle("SweetTreats")
