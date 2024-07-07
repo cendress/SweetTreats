@@ -1,5 +1,5 @@
 //
-//  DessertListViewModel.swift
+//  MealDetailViewModel.swift
 //  SweetTreats
 //
 //  Created by Christopher Endress on 7/7/24.
@@ -7,23 +7,21 @@
 
 import Foundation
 
-// UI updates must occur on the main thread
 @MainActor
-class DessertListViewModel: ObservableObject {
-    @Published var desserts: [MealResponse.Meal] = []
+class MealDetailViewModel: ObservableObject {
+    @Published var mealDetail: MealResponse.Meal?
     @Published var isLoading = false
     @Published var errorMessage: String?
     
-    func loadDesserts() async {
+    func loadMealDetails(mealID: String) async {
         isLoading = true
-        // Clear any prior error messages
         errorMessage = nil
         
         do {
-            desserts = try await NetworkService.shared.fetchMeals(category: "Dessert")
+            mealDetail = try await NetworkService.shared.fetchMealDetails(mealID: mealID)
         } catch {
             errorMessage = error.localizedDescription
-            print("Error fetching desserts.")
+            print("Error fetching meal details by meal ID.")
         }
         
         isLoading = false
