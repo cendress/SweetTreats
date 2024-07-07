@@ -36,11 +36,15 @@ struct MealDetailContentView: View {
                 .padding(.horizontal, 50)
             }
             
+            RectangleDividerView()
+            
             Text("Instructions")
                 .font(.headline)
                 .padding([.top, .horizontal])
             Text(meal.strInstructions ?? "No instructions available.")
                 .padding([.horizontal, .bottom])
+            
+            RectangleDividerView()
             
             Text("Ingredients")
                 .font(.headline)
@@ -49,6 +53,8 @@ struct MealDetailContentView: View {
                 Text(ingredient)
                     .padding(.horizontal)
             }
+            
+            RectangleDividerView()
             
             Text("Measurements")
                 .font(.headline)
