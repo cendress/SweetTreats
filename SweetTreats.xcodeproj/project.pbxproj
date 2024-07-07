@@ -38,6 +38,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9DBA65422C3AC392004A316D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		9DDADAA02C39BD9F00338413 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +67,7 @@
 				9DDADAAC2C39BD9F00338413 /* SweetTreatsApp.swift */,
 				9DDADABC2C39BEAC00338413 /* Models */,
 				9DDADAC32C39CD7000338413 /* Services */,
+				9DBA65422C3AC392004A316D /* ViewModels */,
 				9DDADABD2C39BED300338413 /* Views */,
 				9DDADABE2C39BF0500338413 /* Resources */,
 				9DDADAB22C39BDA200338413 /* Preview Content */,

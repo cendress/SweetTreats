@@ -7,7 +7,6 @@
 
 import Foundation
 
-// Enum to return possible error types
 enum NetworkError: Error {
     case invalidURL
     case noData
@@ -40,6 +39,7 @@ class NetworkService {
             
             do {
                 let mealResponse = try JSONDecoder().decode(MealResponse.self, from: data)
+                // Sort meals alphabetically by name
                 return mealResponse.meals.sorted { $0.strMeal < $1.strMeal }
             } catch {
                 throw NetworkError.decodingError
@@ -69,9 +69,11 @@ class NetworkService {
             
             do {
                 let mealDetailResponse = try JSONDecoder().decode(MealResponse.self, from: data)
+                
                 guard let mealDetail = mealDetailResponse.meals.first else {
                     throw NetworkError.noData
                 }
+                
                 return mealDetail
             } catch {
                 throw NetworkError.decodingError
