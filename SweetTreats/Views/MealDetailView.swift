@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MealDetailView: View {
-    var mealName: String
+    var mealID: String
 
     var body: some View {
         NavigationStack {
@@ -27,11 +27,11 @@ struct MealDetailView: View {
                         .padding()
                 }
             }
-            .navigationTitle(mealName)
+            .navigationTitle(mealID)
         }
     }
 }
 
 #Preview {
-    MealDetailView(mealName: "Sample Dessert Name")
+    MealDetailView(mealID: "Sample Dessert Name")
 }
