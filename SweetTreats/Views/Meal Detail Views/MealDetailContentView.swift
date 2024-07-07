@@ -20,6 +20,10 @@ struct MealDetailContentView: View {
                             .aspectRatio(contentMode: .fit)
                             .clipped()
                             .cornerRadius(8)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 8)
+                                    .stroke(Color.white, lineWidth: 4)
+                            )
                     } else if phase.error != nil {
                         Image(systemName: "photo")
                             .background(Color.gray)
