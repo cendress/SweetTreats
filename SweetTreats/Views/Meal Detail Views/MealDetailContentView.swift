@@ -40,15 +40,15 @@ struct MealDetailContentView: View {
             
             Text("Instructions")
                 .font(.headline)
-                .padding([.top, .horizontal])
+                .padding()
             Text(meal.strInstructions ?? "No instructions available.")
-                .padding([.horizontal, .bottom])
+                .padding(.horizontal)
             
             RectangleDividerView()
             
             Text("Ingredients")
                 .font(.headline)
-                .padding([.top, .horizontal])
+                .padding()
             ForEach(meal.ingredients(), id: \.self) { ingredient in
                 Text(ingredient)
                     .padding(.horizontal)
@@ -58,7 +58,7 @@ struct MealDetailContentView: View {
             
             Text("Measurements")
                 .font(.headline)
-                .padding([.top, .horizontal])
+                .padding()
             ForEach(meal.measurements(), id: \.self) { measurement in
                 Text(measurement)
                     .padding(.horizontal)
