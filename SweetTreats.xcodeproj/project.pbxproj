@@ -55,6 +55,24 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		9DBA654B2C3AD2AB004A316D /* Dessert List Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DDADAAE2C39BD9F00338413 /* DessertListView.swift */,
+				9DBA65472C3ACAF4004A316D /* DessertRow.swift */,
+			);
+			path = "Dessert List Views";
+			sourceTree = "<group>";
+		};
+		9DBA654C2C3AD2B8004A316D /* Meal Detail Views */ = {
+			isa = PBXGroup;
+			children = (
+				9DDADAC12C39C9CF00338413 /* MealDetailView.swift */,
+				9DBA65492C3AD28F004A316D /* MealDetailContentView.swift */,
+			);
+			path = "Meal Detail Views";
+			sourceTree = "<group>";
+		};
 		9DDADAA02C39BD9F00338413 = {
 			isa = PBXGroup;
 			children = (
@@ -104,10 +122,8 @@
 		9DDADABD2C39BED300338413 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9DDADAAE2C39BD9F00338413 /* DessertListView.swift */,
-				9DDADAC12C39C9CF00338413 /* MealDetailView.swift */,
-				9DBA65472C3ACAF4004A316D /* DessertRow.swift */,
-				9DBA65492C3AD28F004A316D /* MealDetailContentView.swift */,
+				9DBA654B2C3AD2AB004A316D /* Dessert List Views */,
+				9DBA654C2C3AD2B8004A316D /* Meal Detail Views */,
 			);
 			path = Views;
 			sourceTree = "<group>";
