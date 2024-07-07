@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MealDetailView: View {
+    @Environment(\.dismiss) var dismiss
     @StateObject private var viewModel = MealDetailViewModel()
     var mealID: String
     
@@ -16,7 +17,7 @@ struct MealDetailView: View {
             ZStack {
                 Color("BackgroundColor")
                     .edgesIgnoringSafeArea(.all)
-        
+                
                 LinearGradient(
                     gradient: Gradient(colors: [Color.white.opacity(0.7), Color.white.opacity(0)]),
                     startPoint: .top,
@@ -38,6 +39,19 @@ struct MealDetailView: View {
                 }
                 .navigationTitle(viewModel.mealDetail?.strMeal ?? "Loading...")
                 .navigationBarTitleDisplayMode(.inline)
+                .navigationBarBackButtonHidden()
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarLeading) {
+                        Button(action: {
+                            dismiss()
+                        }) {
+                            HStack {
+                                Image(systemName: "chevron.left")
+                                    .foregroundStyle(.black)
+                            }
+                        }
+                    }
+                }
                 .onAppear {
                     Task {
                         await viewModel.loadMealDetails(mealID: mealID)
